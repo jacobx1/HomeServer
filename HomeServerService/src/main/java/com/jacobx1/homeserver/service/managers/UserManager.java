@@ -1,17 +1,18 @@
 package com.jacobx1.homeserver.service.managers;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
-import at.favre.lib.crypto.bcrypt.BCryptParser;
 import com.google.inject.Inject;
 import com.jacobx1.homeserver.service.dao.DataDao;
 import com.jacobx1.homeserver.service.model.User;
 import com.jacobx1.homeserver.service.model.UserWithRole;
-import java.nio.charset.StandardCharsets;
+import jakarta.validation.constraints.NotNull;
+
 import java.util.Optional;
 
 public class UserManager {
 
   @Inject
+  @NotNull
   private DataDao dataDao;
 
   public Optional<User> registerUser(String username, String password) {

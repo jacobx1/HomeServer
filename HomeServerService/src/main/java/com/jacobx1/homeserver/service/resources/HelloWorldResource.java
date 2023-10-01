@@ -6,7 +6,6 @@ import com.google.inject.Provider;
 import com.jacobx1.homeserver.service.api.Saying;
 import com.jacobx1.homeserver.service.dao.DataDao;
 import com.jacobx1.homeserver.service.model.User;
-import io.dropwizard.auth.Auth;
 import jakarta.annotation.security.RolesAllowed;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.ws.rs.GET;

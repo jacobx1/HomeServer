@@ -2,7 +2,6 @@ package com.jacobx1.homeserver.service;
 
 import com.jacobx1.homeserver.service.auth.UserPrincipal;
 import com.jacobx1.homeserver.service.config.HomeServerServiceConfiguration;
-import com.jacobx1.homeserver.service.resources.HelloWorldResource;
 import io.dropwizard.configuration.ResourceConfigurationSourceProvider;
 import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
